@@ -2,7 +2,8 @@
  * Queue.h
  *
  *  Created on: Oct 13, 2017
- *      Author: KVTran
+ *      Author: Khang Vinh Tran
+ *      CIS 22C, Lab3
  */
 
 #ifndef QUEUE_H_

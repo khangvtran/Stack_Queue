@@ -2,7 +2,8 @@
  * QueueTest.cpp
  *
  *  Created on: Oct 13, 2017
- *      Author: KVTran
+ *      Author: Khang Vinh Tran
+ *      CIS 22C, Lab3
  */
 
 
@@ -49,8 +50,9 @@ int main()
 	cout << "- Now test == between the 2 queues with 2 3 4. Should print 'Equal'" << endl;
 	if (Q1 == Q2) cout << "Equal" << endl;
 
-
-
+	cout << "- Now, test copy constructor. Create Q4 as acopy of Q1. then print Q4. Should get 2 3 4 " << endl;
+	Queue<int> Q4(Q1);
+	Q4.print();
 
 
 
