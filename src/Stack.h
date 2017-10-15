@@ -97,13 +97,16 @@ template <class stackdata>
 Stack<stackdata>::Stack(const Stack& S)
 {
 	size = S.size;
-	if (S.top == NULL) top = NULL;
+	if (S.top == NULL)
+	{
+		top = NULL;
+	}
 	else
 	{
 		top = new Node(S.top->data);
 		Node* temp = S.top;
 		Node* stemp = top;
-		while(temp != NULL)
+		while(temp->link != NULL)
 		{
 			temp = temp->link;
 			stemp->link = new Node(temp->data);
@@ -133,7 +136,7 @@ Stack<stackdata>::~Stack()
 template <class stackdata>
 void Stack<stackdata>::push(stackdata data)
 {
-	Node* N = Node(data);
+	Node* N = new Node(data);
 	if (size == 0) top = N;
 	else
 	{
