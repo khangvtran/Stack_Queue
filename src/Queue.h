@@ -101,7 +101,7 @@ Queue<queuedata>::Queue(const Queue &queue)
 
        else
         {
-            front = new Node(queue.front->data);
+            front = new Node(queue.front->data); // Create the node that start is pointing to
             Node* temp = queue.front;
             Node* qtemp = front; //create temporary iterator
 
@@ -163,7 +163,7 @@ void Queue<queuedata>::dequeue()
 }
 
 /*************************************************************************/
-/**Accessors*/
+/**Accessors**/
 
 template <class queuedata>
 queuedata Queue<queuedata>::getFront() const

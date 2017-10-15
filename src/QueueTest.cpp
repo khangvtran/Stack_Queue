@@ -9,7 +9,7 @@
 
 # include "Queue.h"
 
-
+/*
 int main()
 {
 	cout << "This is QueueTest.cpp" << endl;
@@ -53,8 +53,7 @@ int main()
 	cout << "- Now, test copy constructor. Create Q4 as acopy of Q1. then print Q4. Should get 2 3 4 " << endl;
 	Queue<int> Q4(Q1);
 	Q4.print();
-
-
-
 	return 0;
 }
+
+*/
