@@ -9,6 +9,7 @@
 
 # include "Stack.h"
 
+/*
 int main()
 {
 
@@ -54,3 +55,4 @@ int main()
 	S4.print();
 	return 0;
 }
+*/
