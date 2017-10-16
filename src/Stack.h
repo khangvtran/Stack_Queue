@@ -2,7 +2,8 @@
  * Stack.h
  *
  *  Created on: Oct 14, 2017
- *      Author: KVTran
+ *      Author: Khang Vinh Tran, Tri Doan
+ *      CIS 22C, Lab3
  */
 
 #ifndef STACK_H_
