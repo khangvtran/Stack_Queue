@@ -2,7 +2,7 @@
  * Queue.h
  *
  *  Created on: Oct 13, 2017
- *      Author: Khang Vinh Tran
+ *      Author: Khang Vinh Tran, Tri Doan
  *      CIS 22C, Lab3
  */
 

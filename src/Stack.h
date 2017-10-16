@@ -2,7 +2,7 @@
  * Stack.h
  *
  *  Created on: Oct 14, 2017
- *      Author: KVTran
+ *      Author: KVTran, Tri Doan
  */
 
 #ifndef STACK_H_
