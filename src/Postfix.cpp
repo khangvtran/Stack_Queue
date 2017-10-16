@@ -38,12 +38,12 @@ int main()
 			{
 				if (component != "+" && component != "-" && component != "*" && component != "/")
 				{
-					cout << "Number: " << component << endl;
+					//cout << "Number: " << component << endl;
 					Q.enqueue(component);
 				}
 				else
 				{
-					cout << "operand: " << component << endl;
+					//cout << "operand: " << component << endl;
 					if (!S.empty())
 					{
 						string stackTop = S.peek();
@@ -63,9 +63,11 @@ int main()
 				Q.enqueue(S.peek());
 				S.pop();
 			}
+			cout << "The equation in postfix notation is: ";
 			Q.print();
+			cout << endl;
 	}
-	else cout << "Bye!" << endl;
+	else cout << endl << "Bye!" << endl;
 	} while (equation != "q");
 
 	return 0;
