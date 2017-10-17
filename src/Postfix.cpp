@@ -44,6 +44,7 @@ int main()
 				else
 				{
 					//cout << "operand: " << component << endl;
+
 					if (!S.empty())
 					{
 						string stackTop = S.peek();
@@ -51,11 +52,21 @@ int main()
 						{
 							Q.enqueue(stackTop);
 							S.pop();
+							if (S.getSize() != 0)
+							{
+								stackTop = S.peek();
+								Q.enqueue(stackTop);
+								S.pop();
+							}
 							S.push(component);
 						}
 						else S.push(component);
+
+
 					}
 					else S.push(component);
+
+
 				}
 			}
 			while (!S.empty())
