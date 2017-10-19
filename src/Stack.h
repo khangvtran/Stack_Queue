@@ -134,6 +134,7 @@ Stack<stackdata>::~Stack()
 /*************************************************************************/
 /**Manipulators*/
 
+/*
 template <class stackdata>
 void Stack<stackdata>::push(stackdata data)
 {
@@ -146,7 +147,18 @@ void Stack<stackdata>::push(stackdata data)
 	}
 	size++;   // enforce postcondition
 }
+*/
 
+template <class stackdata>
+void Stack<stackdata>::push(stackdata data)
+{
+	Node* N = new Node(data);
+	N->link = top;
+	top = N;
+	size++;   // enforce postcondition
+}
+
+/*
 template <class stackdata>
 void Stack<stackdata>::pop()
 {
@@ -162,6 +174,16 @@ void Stack<stackdata>::pop()
 		top = top->link;
 		delete temp;
 	}
+	size--;               // enforce post condition
+}
+*/
+template <class stackdata>
+void Stack<stackdata>::pop()
+{
+	assert(!empty());     // enforce the precondition
+	Node* temp = top;
+	top = top->link;
+	delete temp;
 	size--;               // enforce post condition
 }
 
